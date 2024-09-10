@@ -1,0 +1,10 @@
+# Virtual environment
+.venv/
+# Environment variables
+.env
+# Python bytecode cache
+__pycache__/
+# Ignore OS-specific files
+.DS_Store
+# Ignore logs (if any)
+*.log
