@@ -63,18 +63,11 @@ Create a .env file in the root of the project and add your API credentials as sh
 ```uvicorn main:app --reload```
 Open your browser and navigate to ```http://127.0.0.1:8000/docs``` to view the automatically generated FastAPI documentation.
 
-Project Structure
+## Project Structure
 
-estatebotics.v2/
-├── .venv/                   # Virtual environment (not included in Git)
-├── .env                      # Environment variables (not included in Git)
-├── __pycache__/              # Compiled Python files (not included in Git)
-├── main.py                   # Main FastAPI application entry point
-├── chatbot_service.py         # Chatbot service logic (integrates with OpenAI GPT)
-├── onoffice_service.py        # OnOffice API integration logic
-├── requirements.txt           # Project dependencies
-├── .gitignore                 # Git ignore file
-└── README.md                  # Project documentation
+``` estatebotics.v2/ ├── .venv/ # Virtual environment (not included in Git) ├── .env # Environment variables (not included in Git) ├── pycache/ # Compiled Python files (not included in Git) ├── main.py # Main FastAPI application entry point ├── chatbot_service.py # Chatbot service logic (integrates with OpenAI GPT) ├── onoffice_service.py # OnOffice API integration logic ├── requirements.txt # Project dependencies ├── .gitignore # Git ignore file └── README.md # Project documentation ```
+
+
 ### API Endpoints
 Here are the core endpoints for interacting with the chatbot and OnOffice API.
 
@@ -109,7 +102,7 @@ We welcome contributions! To contribute:
 - Make your changes and commit (git commit -m "Add new feature").
 - Push to the branch (git push origin feature-name).
 - Open a Pull Request.
-- 
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
