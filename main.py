@@ -24,7 +24,7 @@ chatbot = ChatbotService()
 #define a route
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Message":"Welcome to EstateBotics"}
 
 #define a route to an external api 
 @app.get("/properties")
@@ -79,3 +79,4 @@ async def chat(request: ChatRequest):
         return {"response": response}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Chatbot error: {e}")
+
