@@ -39,9 +39,13 @@ class ChatbotService:
                     }, 
                     json = {
                         "model":"gpt-3.5-turbo", 
-                        "messages":[{"role":"user", "content":prompt}]
+                        "messages":[{
+                            "role":"user", 
+                            "content": f"Don't give me any response that too large. Give me response maxing out at 500 characters.You are a realtor and you will only answer to that.Help my client get info or feed back - if any on their query. Here's their query; {prompt}. Remember, if anything is unclear just say; I am sorry I am a real statate bot and would love to help out on anything connected to our business."
+                            }]
                     }
                     )
+                logging.info(response)
                 response.raise_for_status()
                 logger.debug(response) #view the response format
                 return response.json()["choices"][0]["message"]["content"]
