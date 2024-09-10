@@ -1,7 +1,7 @@
-EstateBotics v2
+#EstateBotics v2
 EstateBotics v2 is a real estate chatbot powered by FastAPI and the OnOffice API, designed to help users search and retrieve property listings through a conversational interface. The chatbot is integrated with OpenAI's GPT to provide an intuitive and seamless user experience.
 
-Table of Contents
+##Table of Contents
 Features
 Tech Stack
 Getting Started
