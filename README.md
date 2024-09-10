@@ -20,8 +20,8 @@ EstateBotics v2 is a real estate chatbot powered by FastAPI and the OnOffice API
 
 ## Tech Stack
 - **Backend**: FastAPI, Python
-- **Frontend**: N/A (API only)
-- **Database**: OnOffice API (for property data), NoSQL (if applicable)
+- **Frontend**: React
+- **Database**: OnOffice API (for property data), Postgresql
 - **Other**: OpenAI GPT for chatbot responses, HMAC authentication, GitHub for version control
 
 ## Getting Started
